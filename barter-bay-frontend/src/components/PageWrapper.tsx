@@ -1,6 +1,5 @@
 import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import backgroundImage from "../assets/backgroundImage.png";
 import backgroundImage2 from "../assets/Background03.jpg";
 
 interface PageWrapperProps {

@@ -4,8 +4,8 @@ export const Navbar = () => {
     return (
         <Box
             width="full"
-            h={14}
-            bgColor="pink.300"
+            h={20}
+            bgColor="pink.200"
             display="flex"
             flexDir="row"
         >
