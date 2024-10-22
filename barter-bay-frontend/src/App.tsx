@@ -1,11 +1,13 @@
-import { Box, ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import { Navbar } from "./components/Navbar";
+import { PageWrapper } from "./components/PageWrapper";
 
 function App() {
     return (
         <ChakraProvider>
-            <Navbar />
-            <Box m="auto" width="20%"></Box>
+            <PageWrapper>
+                <Navbar />
+            </PageWrapper>
         </ChakraProvider>
     );
 }
