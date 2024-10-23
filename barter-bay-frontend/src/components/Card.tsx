@@ -8,9 +8,7 @@ interface CardProps {
 export const Card = ({ title, content }: CardProps) => {
     return (
         <Box
-            mt={"60px"}
-            ml={"35%"}
-            maxW="md"
+            maxW="2xl"
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
@@ -18,7 +16,7 @@ export const Card = ({ title, content }: CardProps) => {
             bg="blue.50"
             padding={6}
         >
-            <Text fontSize="xl" fontWeight="bold">
+            <Text fontSize="xl" fontWeight="bold" color="cyan.600">
                 {title}
             </Text>
             <Text mt={4}>{content}</Text>

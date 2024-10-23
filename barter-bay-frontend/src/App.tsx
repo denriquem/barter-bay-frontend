@@ -2,7 +2,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { Navbar } from "./components/Navbar";
 import { PageWrapper } from "./components/PageWrapper";
 import { TitleDisplay } from "./components/TitleDisplay";
-import { Card } from "./components/Card";
+import { Items } from "./components/Items";
 
 function App() {
     return (
@@ -10,10 +10,7 @@ function App() {
             <PageWrapper>
                 <Navbar />
                 <TitleDisplay />
-                <Card
-                    title={"Test card"}
-                    content={"Test card business bla bla"}
-                />
+                <Items />
             </PageWrapper>
         </ChakraProvider>
     );
