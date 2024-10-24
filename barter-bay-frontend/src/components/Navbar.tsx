@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 export const Navbar = () => {
     return (
@@ -9,8 +9,10 @@ export const Navbar = () => {
             display="flex"
             flexDir="row"
         >
-            <Box ml={8} mt={3}>
-                Big NavBar Mate
+            <Box ml={8} mt={5}>
+                <Text color="purple.600" fontWeight="bold" fontSize="xl">
+                    Big NavBar
+                </Text>
             </Box>
             <Box
                 display="flex"
@@ -19,11 +21,17 @@ export const Navbar = () => {
                 flex="1"
                 mr={8}
                 gap={2}
-                mt={3}
+                mt={5}
             >
-                <Box>test1</Box>
-                <Box>test2</Box>
-                <Box>test3</Box>
+                <Text color="purple.600" fontWeight="bold" fontSize="xl">
+                    Test1
+                </Text>
+                <Text color="purple.600" fontWeight="bold" fontSize="xl">
+                    Test2
+                </Text>
+                <Text color="purple.600" fontWeight="bold" fontSize="xl">
+                    Test3
+                </Text>
             </Box>
         </Box>
     );

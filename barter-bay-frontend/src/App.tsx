@@ -1,17 +1,18 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { Navbar } from "./components/Navbar";
-import { PageWrapper } from "./components/PageWrapper";
-import { TitleDisplay } from "./components/TitleDisplay";
-import { Items } from "./components/Items";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { ItemPage } from "./pages/ItemPage";
 
 function App() {
     return (
         <ChakraProvider>
-            <PageWrapper>
-                <Navbar />
-                <TitleDisplay />
-                <Items />
-            </PageWrapper>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/item/:id" element={<ItemPage />}></Route>
+                </Routes>
+            </Router>
         </ChakraProvider>
     );
 }
