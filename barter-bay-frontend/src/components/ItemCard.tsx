@@ -12,9 +12,7 @@ export const Card = ({ title, content, userHandle, id }: CardProps) => {
     const navigate = useNavigate();
 
     const handleItemClick = () => {
-        console.log(id);
-        console.log("hello");
-        navigate("/item/id");
+        navigate(`/item/${id}`);
     };
 
     return (
