@@ -1,6 +1,15 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
+import { useLocation, matchPath, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const isItemPage = matchPath("/item/:userId", location.pathname);
+    const handleBackButton = () => {
+        navigate(-1);
+    };
+
     return (
         <Box
             width="full"
@@ -10,9 +19,13 @@ export const Navbar = () => {
             flexDir="row"
         >
             <Box ml={8} mt={5}>
-                <Text color="purple.600" fontWeight="bold" fontSize="xl">
-                    Big NavBar
-                </Text>
+                {isItemPage ? (
+                    <Button onClick={handleBackButton}>Back</Button>
+                ) : (
+                    <Text color="purple.600" fontWeight="bold" fontSize="xl">
+                        Big NavBar
+                    </Text>
+                )}
             </Box>
             <Box
                 display="flex"
