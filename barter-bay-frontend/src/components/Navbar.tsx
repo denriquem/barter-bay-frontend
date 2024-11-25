@@ -27,6 +27,7 @@ export const Navbar = () => {
                     </Text>
                 )}
             </Box>
+            <Box>Test</Box>
             <Box
                 display="flex"
                 flexDir="row"
