@@ -5,8 +5,6 @@ import { useFetchItems } from "../hooks/useFetchitems";
 export const Items = () => {
     const { data: items, isLoading, isError } = useFetchItems();
 
-    console.log(items);
-
     return (
         <Stack ml="30%" mt="2%" gap={4} mr="10%" py={8} cursor="pointer">
             <Heading mb={5} color="cyan.600">

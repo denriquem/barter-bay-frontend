@@ -23,7 +23,7 @@ export const ItemPage = () => {
                     <Box color="red.500">Error loading items: {isError}</Box>
                 )}
                 {item && (
-                    <Card mx={40} minH="400px">
+                    <Card mx={40} minH="400px" rounded="2xl">
                         <CardHeader
                             color="cyan.600"
                             fontWeight="bold"
